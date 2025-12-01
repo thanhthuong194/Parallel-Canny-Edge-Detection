@@ -43,24 +43,13 @@ cmake ..
 make 
 ```
 
-If CMake fails to find OpenCV, install it (for example on Ubuntu: `sudo apt install libopencv-dev`) or provide OpenCV_DIR to CMake:
-```bash
-cmake -DOpenCV_DIR=/path/to/opencv ..
-```
-
 ## Usage
 
 ### 1) Preparing input images (resize_tool)
 The project targets very large images. Prepare input by resizing your original large image:
 
-- If resize_tool uses hardcoded paths (common in student projects), open `resize_tool.cpp`, set `inputPath` and `outputPath`, rebuild, and run:
 ```bash
 ./resize_tool
-```
-
-- If resize_tool accepts command-line arguments (check the source), use:
-```bash
-./resize_tool /path/to/original.jpg /path/to/resized.jpg WIDTH HEIGHT
 ```
 
 ### 2) Running the Canny benchmark
