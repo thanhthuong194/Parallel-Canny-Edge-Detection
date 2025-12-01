@@ -40,7 +40,7 @@ cd Parallel-Canny-Edge-Detection
 mkdir -p build
 cd build
 cmake ..
-make -j$(nproc)
+make 
 ```
 
 If CMake fails to find OpenCV, install it (for example on Ubuntu: `sudo apt install libopencv-dev`) or provide OpenCV_DIR to CMake:
